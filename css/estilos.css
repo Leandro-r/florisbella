@@ -8,22 +8,47 @@
 body {
   background-image: url('https://cdn.pixabay.com/photo/2018/04/05/14/09/sunflower-3292932_1280.jpg');
   background-size: auto 100vh;
-  font-family: Arial;
+  font-family: 'Roboto', sans-serif;
   height: 100vh;
+  font-size: 14px;
+}
+/*Se a tela estiver pelo menos com 400px vai carregar estes estilos*/
+@media (min-width:400px){
+  body{
+    font-size: 16px;
+  }
+}
+
+/*breakpoint*/
+@media (min-width:600px){
+  body{
+    font-size: 20px;
+  }
+}
+
+@media (min-width:1000px){
+  body{
+    font-size: 22px;
+  }
+}
+
+@media (min-width:1300px){
+  body{
+    font-size: 23px;
+  }
+}
+
+header {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
-  background-color: whitesmoke;
-}
-
-a {
-  color: pink;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  opacity: 0.65; 
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .menu ul {
@@ -32,7 +57,32 @@ a:hover {
 }
 
 .menu li {
+  padding: 6px;
   list-style: none;
+}
+
+.menu a{
+  display: block;
+  padding: 8px 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  
+}
+
+a {
+  background-color: #FFE4E1;
+  border-radius: 4px;
+  color:#FF69B4;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: pink;
+  border-radius: 4px;
+  color: whitesmoke;
+  text-decoration: underline;
+  text-shadow: none;
+  opacity: 0.80; 
 }
 
 .site-subtitle,
@@ -40,6 +90,18 @@ a:hover {
   color: whitesmoke;
   text-align: center;
 }
+
+.site-title {
+  font-size: 4em;
+  font-family: 'Amita', cursive;
+}
+
 .site-subtitle {
   font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.img-portfolio {
+  width: 100px;
+  height: 100px;
 }
